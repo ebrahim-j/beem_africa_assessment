@@ -13,3 +13,14 @@
 5. Create a folder called `output_data` under the `section_a` folder
 
 6. Run the file using command `python section_a\mcc_scraper.py`
+
+
+# Dockerize the scraper
+
+1. Install and Run Docker
+
+2. Build the container image using command `docker build -t mnc_mcc_scraper .`
+
+3. Start your container `docker run mcc_mnc_scraper`. (You should see the output logs of the scraper, as well as a new output file generated at `section_a/output_data`)
+
+4. To access the docker image from Docker hub, pull images using command `docker pull ebrahimj/mcc_mnc_scraper`
